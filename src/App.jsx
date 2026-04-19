@@ -55,7 +55,7 @@ const photoData = [
     src: 'photo-6.jpg',
     theme: 'tomato',
     stamp: 'FRISCO, TEXAS · 2025',
-    caption: 'my cousins here are my constants. they were my first supporters when I launched my newspaper, <em>Voice of Frisco</em>, in 8th grade. while I owe my father for my interest in writing, I owe my cousins for pushing me to learn about geopolitics and human rights issues.',
+    caption: 'my cousins here are my constants. they were my first supporters when I launched my newspaper, <em>Voice of Frisco</em>, in 8th grade. while I owe my father for my interest in writing, I owe my cousins for my interest in geopolitics and human rights. it started with articles over iMessage and turned into discussions at the dinner table.',
     page: '06 / 13'
   },
   {
@@ -71,7 +71,7 @@ const photoData = [
     src: 'photo-8.jpg',
     theme: 'olive',
     stamp: 'FRISCO, TEXAS · 2025',
-    caption: `my high school teachers opened my eyes to walks of life in America. one immigrated from Mexico at 10, had to leave at 18 for his greencard, and came back. he taught us that a lack of acceptance is why this country is in the state it's in. here he is dancing at my graduation party.`,
+    caption: `my high school teachers opened my eyes to walks of life in America. one immigrated from Mexico at 10, had to leave at 18 for his greencard, and came back. he taught us that a lack of acceptance of differences is why this country is in the state it's in. here he is dancing at my graduation party.`,
     page: '08 / 13'
   },
   {
