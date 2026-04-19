@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <!-- trunk -->
+  <rect x="14" y="22" width="4" height="8" rx="1.5" fill="#2e4b2f"/>
+  <!-- bottom foliage -->
+  <polygon points="16,6 5,22 27,22" fill="#355e36"/>
+  <!-- middle foliage -->
+  <polygon points="16,2 7,16 25,16" fill="#3d6e3f"/>
+  <!-- top foliage -->
+  <polygon points="16,0 10,12 22,12" fill="#4a8a4c"/>
+</svg>
