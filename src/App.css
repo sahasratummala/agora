@@ -339,6 +339,63 @@
   color: var(--accent);
 }
 
+.headline-tooltip-wrap {
+  position: relative;
+  cursor: default;
+}
+
+.headline-tooltip {
+  position: absolute;
+  bottom: calc(100% + 12px);
+  left: 0;
+  width: 260px;
+  background: var(--accent);
+  color: #f6eee1;
+  padding: 14px 16px;
+  border-radius: 10px;
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  z-index: 100;
+  box-shadow: 0 12px 32px rgba(44,44,42,0.18);
+}
+
+.headline-tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 24px;
+  border: 6px solid transparent;
+  border-top-color: var(--accent);
+}
+
+.headline-tooltip-wrap:hover .headline-tooltip {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tooltip-word {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-bottom: 2px;
+}
+
+.tooltip-pos {
+  display: block;
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  opacity: 0.6;
+  margin-bottom: 8px;
+}
+
 .panel.opening .byline {
   margin-top: 1.5rem;
   font-family: 'DM Mono', monospace;
