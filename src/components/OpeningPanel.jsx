@@ -19,9 +19,9 @@ export default function OpeningPanel() {
             </span>
           </span>
         </h1>
-        <p className="subtitle">find your people. not your mirror.
-        </p>
-        <div className="byline">By Sahasra Tummala</div>
+        <p className="subtitle">find your people. not your mirror.</p>
+        <div className="byline">a visual essay By Sahasra Tummala</div>
+
         <button className="begin-btn" onClick={handleNext}>scroll →</button>
       </div>
     </section>

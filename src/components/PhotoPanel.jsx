@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import FlightPath from './FlightPath';
 
-export default function PhotoPanel({ id, src, theme, stamp, caption, note, page, position = 'center', decoration }) {
+export default function PhotoPanel({ id, src, theme, stamp, caption, note, page, position = 'center', decoration, photoOverlay, photoExtra, textExtra }) {
   const panelRef = useRef(null);
   const [imgSrc, setImgSrc] = useState(src);
   const placeholderSrc = '/photo-placeholder.svg';
@@ -33,25 +33,32 @@ export default function PhotoPanel({ id, src, theme, stamp, caption, note, page,
       <div className="panel-content">
         <div className="photo-half">
           <div className="polaroid">
-            <img
-              className="photo-image"
-              src={imgSrc}
-              alt={`Photo ${id}`}
-              loading="lazy"
-              style={{ objectPosition: position }}
-              onError={() => {
-                if (imgSrc !== placeholderSrc) {
-                  setImgSrc(placeholderSrc);
-                }
-              }}
-            />
+            <div className="photo-image-wrap">
+              <img
+                className="photo-image"
+                src={imgSrc}
+                alt={`Photo ${id}`}
+                loading="lazy"
+                draggable="false"
+                style={{ objectPosition: position }}
+                onDragStart={e => e.preventDefault()}
+                onError={() => {
+                  if (imgSrc !== placeholderSrc) {
+                    setImgSrc(placeholderSrc);
+                  }
+                }}
+              />
+              {photoOverlay}
+            </div>
             {decoration === 'flight' && <FlightPath />}
+            {photoExtra}
           </div>
         </div>
         <div className="text-half">
           <div className={`stamp ${theme}`}>{stamp}</div>
           <p className="caption" dangerouslySetInnerHTML={{ __html: caption }} />
           {note && <p className="note">{note}</p>}
+          {textExtra}
           <div className="page-number">{page}</div>
         </div>
       </div>
