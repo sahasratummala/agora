@@ -92,7 +92,7 @@ const photoData = [
     position: '10% 65%',
     theme: 'tomato',
     stamp: 'WHO MADE ME BRAVER',
-    caption: `as part of Frisco ISD's Gifted/Talented program, I mentored four younger students who became my "children" — two extroverted, two introverted, and all kinds of interests. they pushed me to be braver. middle school me would've done anything but perform a song about Emmanuel Kant.`,
+    caption: `as part of Frisco ISD's Gifted/Talented program, I mentored four younger students who became my "children" — two extroverted, two introverted, and all kinds of interests. they pushed me to be braver. middle school me would've done anything but perform a song about Immanuel Kant.`,
     page: '09 / 13',
     photoExtra: <DadMug />,
   },
